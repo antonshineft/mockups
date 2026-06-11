@@ -12,7 +12,7 @@
 <meta property="og:url" content="https://drespanya.cat/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=Pinyon+Script&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&family=Inter:wght@400;500;600&family=Pinyon+Script&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -117,17 +117,18 @@
 </script>
 <style>
   :root{
-    --green:#202C22;
-    --green-soft:#2C3B2E;
-    --cream:#F4F0E6;
-    --cream-deep:#ECE6D8;
-    --tan:#B8865B;
-    --tan-soft:#D9C5A8;
-    --ink:#1F261F;
-    --muted:#5E6357;
-    --off:#F1EDE2;
+    --green:#026773;
+    --green-soft:#037A88;
+    --deep:#06343B;
+    --cream:#F0F4F1;
+    --cream-deep:#E2ECE7;
+    --tan:#C08552;
+    --tan-soft:#E2C9A6;
+    --ink:#122A2E;
+    --muted:#51686C;
+    --off:#EDF3EF;
     --radius:22px;
-    --serif:'Fraunces',serif;
+    --head:'Sora',sans-serif;
     --sans:'Inter',sans-serif;
   }
   *{margin:0;padding:0;box-sizing:border-box}
@@ -135,7 +136,7 @@
   body{font-family:var(--sans);background:var(--cream);color:var(--ink);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
   img{max-width:100%;display:block}
   a{color:inherit;text-decoration:none}
-  h1,h2,h3,h4{font-family:var(--serif);font-weight:400;line-height:1.06;letter-spacing:-.015em}
+  h1,h2,h3,h4{font-family:var(--head);font-weight:500;line-height:1.08;letter-spacing:-.02em}
   .h1{font-size:clamp(44px,6.2vw,75px)}
   .h2{font-size:clamp(34px,4.4vw,56px)}
   .h3{font-size:clamp(26px,3.2vw,45px)}
@@ -159,16 +160,16 @@
   .btn-green{background:var(--green);color:var(--off)}
   .btn-green:hover{background:var(--green-soft)}
   .btn-tan{background:var(--tan);color:#fff}
-  .btn-tan:hover{background:#A57549}
-  .btn-line{border-color:rgba(32,44,34,.35);color:var(--green)}
+  .btn-tan:hover{background:#A86F3F}
+  .btn-line{border-color:rgba(6,52,59,.35);color:var(--green)}
   .btn-line:hover{border-color:var(--green)}
   .btn-light{background:var(--off);color:var(--green)}
 
   /* nav */
   header{position:fixed;top:0;left:0;right:0;z-index:100;transition:background .4s,box-shadow .4s,backdrop-filter .4s;padding:18px 0}
-  header.scrolled{background:rgba(244,240,230,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 1px 0 rgba(32,44,34,.08);padding:12px 0}
+  header.scrolled{background:rgba(240,244,241,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 1px 0 rgba(6,52,59,.08);padding:12px 0}
   .nav{display:flex;align-items:center;justify-content:space-between;gap:24px}
-  .brand{display:flex;align-items:center;gap:12px;font-family:var(--serif);font-size:19px;font-weight:500;color:var(--green)}
+  .brand{display:flex;align-items:center;gap:12px;font-family:var(--head);font-size:19px;font-weight:500;color:var(--green)}
   .brand img{width:44px;height:44px;object-fit:contain}
   .nav-links{display:flex;gap:30px;font-size:14px;font-weight:500;color:var(--green)}
   .nav-links a{position:relative;padding:4px 0}
@@ -183,7 +184,7 @@
   .hero{padding:170px 0 90px;position:relative}
   .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
   @media(max-width:920px){.hero-grid{grid-template-columns:1fr}}
-  .hero-badge{display:inline-flex;align-items:center;gap:10px;background:#fff;border:1px solid rgba(32,44,34,.1);border-radius:999px;padding:9px 18px;font-size:13px;font-weight:600;color:var(--green);box-shadow:0 8px 24px rgba(32,44,34,.07);margin-bottom:26px}
+  .hero-badge{display:inline-flex;align-items:center;gap:10px;background:#fff;border:1px solid rgba(6,52,59,.1);border-radius:999px;padding:9px 18px;font-size:13px;font-weight:600;color:var(--green);box-shadow:0 8px 24px rgba(6,52,59,.07);margin-bottom:26px}
   .hero-badge svg{flex:none}
   .hero h1 em{font-style:italic;font-weight:300;color:var(--tan)}
   .hero .lead{margin:26px 0 36px}
@@ -195,7 +196,7 @@
   .collage .c2 .ph{height:400px;border-radius:160px 160px 16px 16px}
   .collage .c3 .ph{height:250px}
   .collage .col{display:flex;flex-direction:column;gap:14px}
-  .float-card{position:absolute;left:-18px;bottom:26px;background:#fff;border-radius:14px;padding:14px 18px;box-shadow:0 18px 40px rgba(32,44,34,.16);font-size:13px;display:flex;gap:10px;align-items:center;max-width:240px;z-index:3}
+  .float-card{position:absolute;left:-18px;bottom:26px;background:#fff;border-radius:14px;padding:14px 18px;box-shadow:0 18px 40px rgba(6,52,59,.16);font-size:13px;display:flex;gap:10px;align-items:center;max-width:240px;z-index:3}
   .float-card b{display:block;font-size:13.5px;color:var(--green)}
   .float-card span{color:var(--muted);font-size:12px}
   .spark{position:absolute;z-index:2;pointer-events:none}
@@ -205,9 +206,9 @@
 
   /* marquee */
   .ribbon-wrap{overflow:hidden;padding:18px 0;margin:-8px 0}
-  .ribbon{background:var(--green);color:var(--off);padding:20px 0;overflow:hidden;transform:rotate(-1.2deg);margin:10px -20px;width:calc(100% + 40px)}
+  .ribbon{background:var(--deep);color:var(--off);padding:20px 0;overflow:hidden;transform:rotate(-1.2deg);margin:10px -20px;width:calc(100% + 40px)}
   .ribbon-track{display:flex;width:max-content;animation:marq 36s linear infinite;gap:0}
-  .ribbon span{font-family:var(--serif);font-size:20px;font-style:italic;white-space:nowrap;padding:0 18px;display:flex;align-items:center;gap:34px}
+  .ribbon span{font-family:var(--head);font-size:20px;font-style:italic;white-space:nowrap;padding:0 18px;display:flex;align-items:center;gap:34px}
   .ribbon i{font-style:normal;color:var(--tan);font-size:16px}
   @keyframes marq{to{transform:translateX(-50%)}}
 
@@ -215,7 +216,7 @@
   .stats{padding:80px 0 30px}
   .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:30px;text-align:center}
   @media(max-width:820px){.stats-grid{grid-template-columns:repeat(2,1fr)}}
-  .stat b{font-family:var(--serif);font-weight:500;font-size:clamp(40px,4.6vw,62px);color:var(--green);display:block;line-height:1}
+  .stat b{font-family:var(--head);font-weight:500;font-size:clamp(40px,4.6vw,62px);color:var(--green);display:block;line-height:1}
   .stat b sup{font-size:.45em;color:var(--tan);top:-.8em}
   .stat span{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600;display:block;margin-top:10px}
 
@@ -224,17 +225,17 @@
   @media(max-width:920px){.claim{grid-template-columns:1fr;gap:40px}}
   .claim-photo{position:relative}
   .claim-photo img{border-radius:var(--radius);width:100%;height:470px;object-fit:cover}
-  .seal{position:absolute;width:130px;height:130px;right:-28px;top:-28px;z-index:3;filter:drop-shadow(0 10px 24px rgba(32,44,34,.25));animation:spin 22s linear infinite}
+  .seal{position:absolute;width:130px;height:130px;right:-28px;top:-28px;z-index:3;filter:drop-shadow(0 10px 24px rgba(6,52,59,.25));animation:spin 22s linear infinite}
   @media(max-width:920px){.seal{right:8px;top:-30px}}
   .claim-body .h2{margin-bottom:22px}
   .claim-body p{color:var(--muted);margin-bottom:16px;max-width:520px}
   .claim-list{margin:24px 0 32px;display:grid;gap:12px}
   .claim-list li{list-style:none;display:flex;gap:12px;align-items:flex-start;font-size:15px}
   .claim-list li svg{flex:none;margin-top:4px}
-  .dark{background:var(--green);color:var(--off);border-radius:34px;margin:0 14px}
+  .dark{background:var(--deep);color:var(--off);border-radius:34px;margin:0 14px}
   .dark .h2{color:var(--off)}
-  .dark .claim-body p{color:rgba(241,237,226,.72)}
-  .dark .claim-list li{color:rgba(241,237,226,.9)}
+  .dark .claim-body p{color:rgba(237,243,239,.72)}
+  .dark .claim-list li{color:rgba(237,243,239,.9)}
   .dark .kicker{color:var(--tan-soft)}
   .dark .kicker::before{background:var(--tan-soft)}
 
@@ -243,17 +244,17 @@
   .bento{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
   @media(max-width:920px){.bento{grid-template-columns:1fr 1fr}}
   @media(max-width:640px){.bento{grid-template-columns:1fr}}
-  .cell{background:#fff;border-radius:var(--radius);padding:34px 30px;position:relative;overflow:hidden;border:1px solid rgba(32,44,34,.06);transition:transform .45s cubic-bezier(.16,1,.3,1),box-shadow .45s}
-  .cell:hover{transform:translateY(-7px);box-shadow:0 24px 50px rgba(32,44,34,.12)}
+  .cell{background:#fff;border-radius:var(--radius);padding:34px 30px;position:relative;overflow:hidden;border:1px solid rgba(6,52,59,.06);transition:transform .45s cubic-bezier(.16,1,.3,1),box-shadow .45s}
+  .cell:hover{transform:translateY(-7px);box-shadow:0 24px 50px rgba(6,52,59,.12)}
   .cell h3{font-size:24px;margin:54px 0 12px;font-weight:500}
   .cell p{font-size:14.5px;color:var(--muted)}
-  .cell .num{position:absolute;top:26px;right:28px;font-family:var(--serif);font-style:italic;color:rgba(32,44,34,.18);font-size:20px}
+  .cell .num{position:absolute;top:26px;right:28px;font-family:var(--head);font-style:italic;color:rgba(6,52,59,.18);font-size:20px}
   .cell .ico{width:48px;height:48px;border-radius:14px;background:var(--cream);display:flex;align-items:center;justify-content:center;position:absolute;top:24px;left:26px}
-  .cell-dark{background:var(--green);border-color:var(--green)}
+  .cell-dark{background:var(--deep);border-color:var(--deep)}
   .cell-dark h3{color:var(--off)}
-  .cell-dark p{color:rgba(241,237,226,.7)}
-  .cell-dark .ico{background:rgba(241,237,226,.1)}
-  .cell-dark .num{color:rgba(241,237,226,.25)}
+  .cell-dark p{color:rgba(237,243,239,.7)}
+  .cell-dark .ico{background:rgba(237,243,239,.1)}
+  .cell-dark .num{color:rgba(237,243,239,.25)}
   .cell-tan{background:var(--tan);border-color:var(--tan)}
   .cell-tan h3{color:#fff}
   .cell-tan p{color:rgba(255,255,255,.82)}
@@ -262,14 +263,14 @@
   .cell-wide{grid-column:span 2}
   @media(max-width:640px){.cell-wide{grid-column:span 1}}
   .tags{display:flex;flex-wrap:wrap;gap:9px;margin-top:16px}
-  .tag{font-size:12.5px;font-weight:600;padding:8px 15px;border-radius:999px;background:var(--cream);color:var(--green);border:1px solid rgba(32,44,34,.08);transition:background .3s,color .3s}
+  .tag{font-size:12.5px;font-weight:600;padding:8px 15px;border-radius:999px;background:var(--cream);color:var(--green);border:1px solid rgba(6,52,59,.08);transition:background .3s,color .3s}
   .tag:hover{background:var(--green);color:var(--off)}
 
   /* equipo */
-  .team-rows{border-top:1px solid rgba(32,44,34,.12)}
-  .trow{display:grid;grid-template-columns:60px 1fr auto;gap:24px;align-items:center;padding:26px 10px;border-bottom:1px solid rgba(32,44,34,.12);transition:background .3s,padding .3s}
+  .team-rows{border-top:1px solid rgba(6,52,59,.12)}
+  .trow{display:grid;grid-template-columns:60px 1fr auto;gap:24px;align-items:center;padding:26px 10px;border-bottom:1px solid rgba(6,52,59,.12);transition:background .3s,padding .3s}
   .trow:hover{background:#fff;padding-left:22px;border-radius:12px}
-  .trow .n{font-family:var(--serif);font-size:15px;color:var(--tan);font-style:italic}
+  .trow .n{font-family:var(--head);font-size:15px;color:var(--tan);font-style:italic}
   .trow h3{font-size:clamp(20px,2.4vw,30px);font-weight:500}
   .trow span{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:600}
   .team-extra{margin-top:26px;font-size:14px;color:var(--muted)}
@@ -277,7 +278,7 @@
 
   /* quote */
   .quote{text-align:center;max-width:880px;margin:0 auto}
-  .quote blockquote{font-family:var(--serif);font-size:clamp(28px,3.8vw,48px);line-height:1.22;font-weight:400}
+  .quote blockquote{font-family:var(--head);font-size:clamp(28px,3.8vw,48px);line-height:1.22;font-weight:400}
   .quote blockquote em{color:var(--tan);font-style:italic}
   .quote .sig{font-family:'Pinyon Script',cursive;font-size:46px;color:var(--green);margin-top:38px}
   .quote .who{font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-top:6px}
@@ -285,8 +286,8 @@
   /* faq */
   .faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px;align-items:start}
   @media(max-width:920px){.faq-grid{grid-template-columns:1fr}}
-  .faq-item{border-bottom:1px solid rgba(32,44,34,.14)}
-  .faq-q{width:100%;background:none;border:none;text-align:left;font-family:var(--serif);font-size:21px;color:var(--ink);padding:24px 44px 24px 4px;cursor:pointer;position:relative;transition:color .3s}
+  .faq-item{border-bottom:1px solid rgba(6,52,59,.14)}
+  .faq-q{width:100%;background:none;border:none;text-align:left;font-family:var(--head);font-size:21px;color:var(--ink);padding:24px 44px 24px 4px;cursor:pointer;position:relative;transition:color .3s}
   .faq-q:hover{color:var(--tan)}
   .faq-q::after{content:"+";position:absolute;right:8px;top:50%;transform:translateY(-50%);font-family:var(--sans);font-size:24px;font-weight:400;color:var(--tan);transition:transform .35s}
   .faq-item.open .faq-q::after{transform:translateY(-50%) rotate(45deg)}
@@ -294,18 +295,18 @@
   .faq-a p{padding:0 4px 26px;color:var(--muted);font-size:15px;max-width:620px}
 
   /* cita */
-  .cita{background:var(--green);border-radius:34px;margin:0 14px;color:var(--off)}
+  .cita{background:var(--deep);border-radius:34px;margin:0 14px;color:var(--off)}
   .cita .h2{color:var(--off)}
   .cita-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:start}
   @media(max-width:920px){.cita-grid{grid-template-columns:1fr}}
-  .cita-info p{color:rgba(241,237,226,.72);margin:18px 0 30px;max-width:420px}
+  .cita-info p{color:rgba(237,243,239,.72);margin:18px 0 30px;max-width:420px}
   .cinfo{display:grid;gap:18px}
   .cinfo div{display:flex;gap:14px;align-items:flex-start}
-  .cinfo .ic{width:42px;height:42px;flex:none;border-radius:12px;background:rgba(241,237,226,.08);display:flex;align-items:center;justify-content:center}
+  .cinfo .ic{width:42px;height:42px;flex:none;border-radius:12px;background:rgba(237,243,239,.08);display:flex;align-items:center;justify-content:center}
   .cinfo b{display:block;font-size:14px;margin-bottom:2px}
-  .cinfo span{font-size:14px;color:rgba(241,237,226,.66);line-height:1.5}
+  .cinfo span{font-size:14px;color:rgba(237,243,239,.66);line-height:1.5}
   .cinfo a:hover{color:var(--tan-soft)}
-  .hours{margin-top:8px;font-size:13.5px;color:rgba(241,237,226,.66)}
+  .hours{margin-top:8px;font-size:13.5px;color:rgba(237,243,239,.66)}
   .form-card{background:var(--cream);color:var(--ink);border-radius:24px;padding:40px;box-shadow:0 30px 70px rgba(0,0,0,.25)}
   .form-card h3{font-size:26px;margin-bottom:6px;font-weight:500}
   .form-card .fnote{font-size:13.5px;color:var(--muted);margin-bottom:26px}
@@ -314,9 +315,9 @@
   .fgroup{display:flex;flex-direction:column;gap:6px}
   .fgroup.full{grid-column:1/-1}
   .fgroup label{font-size:12.5px;font-weight:600;letter-spacing:.04em;color:var(--green)}
-  .fgroup input,.fgroup select,.fgroup textarea{font-family:var(--sans);font-size:14.5px;padding:13px 15px;border-radius:12px;border:1px solid rgba(32,44,34,.16);background:#fff;color:var(--ink);transition:border-color .3s,box-shadow .3s;width:100%}
+  .fgroup input,.fgroup select,.fgroup textarea{font-family:var(--sans);font-size:14.5px;padding:13px 15px;border-radius:12px;border:1px solid rgba(6,52,59,.16);background:#fff;color:var(--ink);transition:border-color .3s,box-shadow .3s;width:100%}
   .fgroup textarea{min-height:110px;resize:vertical}
-  .fgroup input:focus,.fgroup select:focus,.fgroup textarea:focus{outline:none;border-color:var(--tan);box-shadow:0 0 0 3px rgba(184,134,91,.18)}
+  .fgroup input:focus,.fgroup select:focus,.fgroup textarea:focus{outline:none;border-color:var(--tan);box-shadow:0 0 0 3px rgba(192,133,82,.18)}
   .fcheck{display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--muted);grid-column:1/-1;margin-top:4px}
   .fcheck input{margin-top:3px;accent-color:var(--green)}
   .fcheck a{text-decoration:underline;color:var(--green)}
@@ -327,27 +328,27 @@
 
   /* AIO */
   .aio{padding:90px 0}
-  .aio-box{background:linear-gradient(120deg,#fff, var(--cream-deep));border:1px solid rgba(184,134,91,.35);border-radius:28px;padding:54px;display:grid;grid-template-columns:auto 1fr;gap:40px;align-items:center}
+  .aio-box{background:linear-gradient(120deg,#fff, var(--cream-deep));border:1px solid rgba(192,133,82,.35);border-radius:28px;padding:54px;display:grid;grid-template-columns:auto 1fr;gap:40px;align-items:center}
   @media(max-width:820px){.aio-box{grid-template-columns:1fr;padding:38px}}
-  .aio-seal{width:120px;height:120px;border-radius:50%;background:var(--green);display:flex;align-items:center;justify-content:center;flex-direction:column;color:var(--off);text-align:center;font-size:10px;letter-spacing:.12em;font-weight:600;gap:4px;box-shadow:0 16px 40px rgba(32,44,34,.25)}
-  .aio-seal b{font-family:var(--serif);font-size:26px;letter-spacing:0;color:var(--tan-soft)}
+  .aio-seal{width:120px;height:120px;border-radius:50%;background:var(--deep);display:flex;align-items:center;justify-content:center;flex-direction:column;color:var(--off);text-align:center;font-size:10px;letter-spacing:.12em;font-weight:600;gap:4px;box-shadow:0 16px 40px rgba(6,52,59,.25)}
+  .aio-seal b{font-family:var(--head);font-size:26px;letter-spacing:0;color:var(--tan-soft)}
   .aio h3{font-size:28px;font-weight:500;margin-bottom:10px}
   .aio p{color:var(--muted);font-size:15px;max-width:640px}
   .aio ul{margin-top:16px;display:flex;flex-wrap:wrap;gap:10px}
-  .aio li{list-style:none;font-size:12.5px;font-weight:600;background:#fff;border:1px solid rgba(32,44,34,.1);padding:8px 14px;border-radius:999px;color:var(--green)}
+  .aio li{list-style:none;font-size:12.5px;font-weight:600;background:#fff;border:1px solid rgba(6,52,59,.1);padding:8px 14px;border-radius:999px;color:var(--green)}
 
   /* footer */
-  footer{background:var(--green);color:rgba(241,237,226,.7);padding:90px 0 36px;border-radius:34px 34px 0 0;margin:0 14px}
-  .foot-mark{font-family:var(--serif);font-size:clamp(64px,11vw,150px);color:var(--off);line-height:.95;letter-spacing:-.02em;margin-bottom:60px}
+  footer{background:var(--deep);color:rgba(237,243,239,.7);padding:90px 0 36px;border-radius:34px 34px 0 0;margin:0 14px}
+  .foot-mark{font-family:var(--head);font-size:clamp(64px,11vw,150px);color:var(--off);line-height:.95;letter-spacing:-.02em;margin-bottom:60px}
   .foot-mark em{font-style:italic;color:var(--tan)}
-  .foot-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:40px;padding-bottom:50px;border-bottom:1px solid rgba(241,237,226,.14)}
+  .foot-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:40px;padding-bottom:50px;border-bottom:1px solid rgba(237,243,239,.14)}
   @media(max-width:820px){.foot-grid{grid-template-columns:1fr 1fr}}
   .foot-grid h4{font-family:var(--sans);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--tan-soft);margin-bottom:18px;font-weight:600}
-  .foot-grid a,.foot-grid p{display:block;font-size:14.5px;margin-bottom:10px;color:rgba(241,237,226,.75)}
+  .foot-grid a,.foot-grid p{display:block;font-size:14.5px;margin-bottom:10px;color:rgba(237,243,239,.75)}
   .foot-grid a:hover{color:#fff}
   .foot-brand{display:flex;align-items:center;gap:12px;margin-bottom:18px}
   .foot-brand img{width:46px;filter:brightness(0) invert(.95)}
-  .foot-bottom{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;padding-top:28px;font-size:12.5px;color:rgba(241,237,226,.45)}
+  .foot-bottom{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;padding-top:28px;font-size:12.5px;color:rgba(237,243,239,.45)}
   .foot-bottom a{text-decoration:underline}
 </style>
 </head>
@@ -380,7 +381,7 @@
   <div class="container hero-grid">
     <div>
       <div class="hero-badge rv">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 0L14.6 9.4 24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6L12 0z" fill="#B8865B"/></svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 0L14.6 9.4 24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6L12 0z" fill="#C08552"/></svg>
         Clínica familiar en Sants · Desde 1984
       </div>
       <h1 class="h1 rv d1">Odontología de calidad, <em>con calma,</em> desde 1984</h1>
@@ -390,18 +391,18 @@
         <a class="btn btn-line" href="tel:+34934393599"><span class="lbl"><span>Llamar · 93 439 35 99</span><span>Llamar · 93 439 35 99</span></span></a>
       </div>
       <p class="hero-note rv d4">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#B8865B" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#C08552" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
         C/ Berlín 34, Entresuelo 1ª · 08014 Barcelona (Sants – Les Corts)
       </p>
     </div>
     <div class="collage rv d2">
-      <svg class="spark s1" width="44" height="44" viewBox="0 0 24 24" fill="none"><path d="M12 0L14.6 9.4 24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6L12 0z" fill="#B8865B"/></svg>
-      <svg class="spark s2" viewBox="0 0 24 24" fill="none"><path d="M12 0L14.6 9.4 24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6L12 0z" fill="#202C22" opacity=".55"/></svg>
+      <svg class="spark s1" width="44" height="44" viewBox="0 0 24 24" fill="none"><path d="M12 0L14.6 9.4 24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6L12 0z" fill="#C08552"/></svg>
+      <svg class="spark s2" viewBox="0 0 24 24" fill="none"><path d="M12 0L14.6 9.4 24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6L12 0z" fill="#026773" opacity=".55"/></svg>
       <div class="col c1"><img class="ph" data-img="hero2" alt="Recepción de la Clínica Dental Dr. Espanya"></div>
       <div class="col c2"><img class="ph" data-img="hero1" alt="Gabinete dental con radiología digital en pantalla"></div>
       <div class="col c3"><img class="ph" data-img="hero3" alt="Gabinete dental durante un tratamiento con láser"></div>
       <div class="float-card">
-        <svg width="30" height="30" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#F4F0E6"/><path d="M8 12.5l2.5 2.5L16 9.5" stroke="#202C22" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#F0F4F1"/><path d="M8 12.5l2.5 2.5L16 9.5" stroke="#026773" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         <div><b>Método slow</b><span>Nos focalizamos en ti y en aquello que necesitas</span></div>
       </div>
     </div>
@@ -431,9 +432,9 @@
     <div class="claim-photo rv">
       <svg class="seal" viewBox="0 0 130 130">
         <defs><path id="circ1" d="M65,65 m-48,0 a48,48 0 1,1 96,0 a48,48 0 1,1 -96,0"/></defs>
-        <circle cx="65" cy="65" r="64" fill="#202C22"/>
-        <text fill="#F1EDE2" font-size="11.5" font-family="Inter,sans-serif" font-weight="600" letter-spacing="2.6"><textPath href="#circ1">PIONEROS EN LÁSER · CLÍNICA DR. ESPANYA · </textPath></text>
-        <path d="M65 50L68.9 61.1 80 65l-11.1 3.9L65 80l-3.9-11.1L50 65l11.1-3.9L65 50z" fill="#B8865B"/>
+        <circle cx="65" cy="65" r="64" fill="#026773"/>
+        <text fill="#EDF3EF" font-size="11.5" font-family="Inter,sans-serif" font-weight="600" letter-spacing="2.6"><textPath href="#circ1">PIONEROS EN LÁSER · CLÍNICA DR. ESPANYA · </textPath></text>
+        <path d="M65 50L68.9 61.1 80 65l-11.1 3.9L65 80l-3.9-11.1L50 65l11.1-3.9L65 50z" fill="#C08552"/>
       </svg>
       <img data-img="laser" alt="Tratamiento con láser odontológico en la clínica">
     </div>
@@ -442,9 +443,9 @@
       <h2 class="h2 rv d1">Pioneros en láser odontológico</h2>
       <p class="rv d2">En nuestra clínica somos pioneros en la utilización del láser en odontología. El láser es una herramienta terapéutica que, en gran cantidad de situaciones, permite mejorar el confort del paciente y acorta el tiempo de recuperación.</p>
       <ul class="claim-list rv d3">
-        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#B8865B" stroke-width="2.4" stroke-linecap="round"/></svg>Diversidad de unidades láser, transportables entre gabinetes</li>
-        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#B8865B" stroke-width="2.4" stroke-linecap="round"/></svg>Radiología digital en todos los gabinetes, consultable en pantalla durante el tratamiento</li>
-        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#B8865B" stroke-width="2.4" stroke-linecap="round"/></svg>Profesionales que te indican cuándo el láser aporta ventajas frente a la técnica convencional</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#C08552" stroke-width="2.4" stroke-linecap="round"/></svg>Diversidad de unidades láser, transportables entre gabinetes</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#C08552" stroke-width="2.4" stroke-linecap="round"/></svg>Radiología digital en todos los gabinetes, consultable en pantalla durante el tratamiento</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#C08552" stroke-width="2.4" stroke-linecap="round"/></svg>Profesionales que te indican cuándo el láser aporta ventajas frente a la técnica convencional</li>
       </ul>
       <a class="btn btn-tan rv d4" href="#tratamientos"><span class="lbl"><span>Ver tratamientos</span><span>Ver tratamientos</span></span></a>
     </div>
@@ -459,18 +460,18 @@
       <h2 class="h2 rv d1">Odontología basada en el método slow</h2>
       <p class="rv d2">Trabajamos en una odontología donde nos focalizamos en ti y en aquello que necesitas, en un ambiente donde reina la calma y la tranquilidad, con el fin de que sientas una completa satisfacción con la experiencia vivida y los resultados obtenidos.</p>
       <ul class="claim-list rv d3">
-        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#D9C5A8" stroke-width="2.4" stroke-linecap="round"/></svg>Trato profesional altamente personalizado, desde tu primera visita</li>
-        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#D9C5A8" stroke-width="2.4" stroke-linecap="round"/></svg>Sedación con anestesista para situaciones de máxima ansiedad</li>
-        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#D9C5A8" stroke-width="2.4" stroke-linecap="round"/></svg>Sala de espera con televisión, libros, revistas y wifi, en un ambiente relajado</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#E2C9A6" stroke-width="2.4" stroke-linecap="round"/></svg>Trato profesional altamente personalizado, desde tu primera visita</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#E2C9A6" stroke-width="2.4" stroke-linecap="round"/></svg>Sedación con anestesista para situaciones de máxima ansiedad</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#E2C9A6" stroke-width="2.4" stroke-linecap="round"/></svg>Sala de espera con televisión, libros, revistas y wifi, en un ambiente relajado</li>
       </ul>
       <a class="btn btn-light rv d4" href="#contacto"><span class="lbl"><span>Pedir cita tranquila</span><span>Pedir cita tranquila</span></span></a>
     </div>
     <div class="claim-photo rv d2">
       <svg class="seal" viewBox="0 0 130 130">
         <defs><path id="circ2" d="M65,65 m-48,0 a48,48 0 1,1 96,0 a48,48 0 1,1 -96,0"/></defs>
-        <circle cx="65" cy="65" r="64" fill="#B8865B"/>
+        <circle cx="65" cy="65" r="64" fill="#C08552"/>
         <text fill="#fff" font-size="11.5" font-family="Inter,sans-serif" font-weight="600" letter-spacing="2.8"><textPath href="#circ2">ODONTOLOGÍA SLOW · CALMA · CONFORT · </textPath></text>
-        <path d="M65 50L68.9 61.1 80 65l-11.1 3.9L65 80l-3.9-11.1L50 65l11.1-3.9L65 50z" fill="#202C22"/>
+        <path d="M65 50L68.9 61.1 80 65l-11.1 3.9L65 80l-3.9-11.1L50 65l11.1-3.9L65 50z" fill="#026773"/>
       </svg>
       <img data-img="espera" alt="Sala de espera de la clínica, con luz natural y ambiente relajado">
     </div>
@@ -489,19 +490,19 @@
     </div>
     <div class="bento">
       <div class="cell cell-dark rv">
-        <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M13 2L4 14h6l-1 8 9-12h-6l1-8z" stroke="#D9C5A8" stroke-width="1.8" stroke-linejoin="round"/></svg></div>
+        <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M13 2L4 14h6l-1 8 9-12h-6l1-8z" stroke="#E2C9A6" stroke-width="1.8" stroke-linejoin="round"/></svg></div>
         <span class="num">(01)</span>
         <h3>Láser odontológico</h3>
         <p>Más confort y una recuperación más rápida en gran cantidad de situaciones. Somos pioneros en su uso en odontología.</p>
       </div>
       <div class="cell rv d1">
-        <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 3v18M5 8c0-2.8 3.1-5 7-5s7 2.2 7 5c0 4-3 4.5-3 9 0 1.7-1 4-2 4s-1.6-1.6-2-4c-.4 2.4-1 4-2 4s-2-2.3-2-4c0-4.5-3-5-3-9z" stroke="#202C22" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+        <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 3v18M5 8c0-2.8 3.1-5 7-5s7 2.2 7 5c0 4-3 4.5-3 9 0 1.7-1 4-2 4s-1.6-1.6-2-4c-.4 2.4-1 4-2 4s-2-2.3-2-4c0-4.5-3-5-3-9z" stroke="#026773" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
         <span class="num">(02)</span>
         <h3>Implantología dental</h3>
         <p>Sustitución de los dientes perdidos mediante implantes, sin modificar los dientes sanos remanentes.</p>
       </div>
       <div class="cell rv d2">
-        <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 12h16M4 12c0-4 2-7 8-7s8 3 8 7-2 7-8 7-8-3-8-7z" stroke="#202C22" stroke-width="1.6"/></svg></div>
+        <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 12h16M4 12c0-4 2-7 8-7s8 3 8 7-2 7-8 7-8-3-8-7z" stroke="#026773" stroke-width="1.6"/></svg></div>
         <span class="num">(03)</span>
         <h3>Ortodoncia</h3>
         <p>Corrección de la posición dentaria con diferentes aparatos y técnicas, tanto en niños como en adultos.</p>
@@ -513,7 +514,7 @@
         <p>Una experiencia dental agradable en edades tempranas: calidez, tranquilidad y confort para los más pequeños.</p>
       </div>
       <div class="cell cell-wide rv d1">
-        <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.6-9.5-9C.8 8.6 2.6 5 6 5c2.2 0 3.6 1.2 6 3.8C14.4 6.2 15.8 5 18 5c3.4 0 5.2 3.6 3.5 7-2.5 4.4-9.5 9-9.5 9z" stroke="#202C22" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+        <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.6-9.5-9C.8 8.6 2.6 5 6 5c2.2 0 3.6 1.2 6 3.8C14.4 6.2 15.8 5 18 5c3.4 0 5.2 3.6 3.5 7-2.5 4.4-9.5 9-9.5 9z" stroke="#026773" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
         <span class="num">(+11)</span>
         <h3>…y un servicio odontológico integral</h3>
         <p>Nuestros servicios abarcan todos los tratamientos y especialidades de la odontología, cubriendo todas las necesidades de nuestros pacientes.</p>
@@ -554,7 +555,7 @@
 <!-- QUOTE -->
 <section style="padding-top:40px">
   <div class="container quote">
-    <svg class="rv" width="40" height="40" viewBox="0 0 24 24" fill="none" style="margin:0 auto 30px"><path d="M12 0L14.6 9.4 24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6L12 0z" fill="#B8865B"/></svg>
+    <svg class="rv" width="40" height="40" viewBox="0 0 24 24" fill="none" style="margin:0 auto 30px"><path d="M12 0L14.6 9.4 24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6L12 0z" fill="#C08552"/></svg>
     <blockquote class="rv d1">«Tú eres nuestro compromiso. <em>Déjanos cuidar de tu sonrisa.</em> ¡Bienvenido/a a nuestra casa!»</blockquote>
     <div class="sig rv d2">Clínica Dr. Espanya</div>
     <div class="who rv d3">Sants, Barcelona · Desde 1984</div>
@@ -604,23 +605,23 @@
       <p class="rv d2">Si necesitas una cita o tienes cualquier duda sobre algún tratamiento, estaremos encantados de ayudarte.</p>
       <div class="cinfo rv d3">
         <div>
-          <div class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.4 2.1L8.1 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.6 2z" stroke="#D9C5A8" stroke-width="1.6"/></svg></div>
+          <div class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.4 2.1L8.1 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.6 2z" stroke="#E2C9A6" stroke-width="1.6"/></svg></div>
           <div><b>Teléfono</b><span><a href="tel:+34934393599">(+34) 93 439 35 99</a> · <a href="tel:+34670325671">(+34) 670 32 56 71</a></span></div>
         </div>
         <div>
-          <div class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2z" stroke="#D9C5A8" stroke-width="1.6"/></svg></div>
+          <div class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2z" stroke="#E2C9A6" stroke-width="1.6"/></svg></div>
           <div><b>WhatsApp</b><span><a href="https://wa.me/34670325671">670 32 56 71</a></span></div>
         </div>
         <div>
-          <div class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="2" y="4" width="20" height="16" rx="3" stroke="#D9C5A8" stroke-width="1.6"/><path d="M2 7l10 7L22 7" stroke="#D9C5A8" stroke-width="1.6"/></svg></div>
+          <div class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="2" y="4" width="20" height="16" rx="3" stroke="#E2C9A6" stroke-width="1.6"/><path d="M2 7l10 7L22 7" stroke="#E2C9A6" stroke-width="1.6"/></svg></div>
           <div><b>Email</b><span><a href="mailto:info@drespanya.cat">info@drespanya.cat</a></span></div>
         </div>
         <div>
-          <div class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 22s8-5.5 8-12a8 8 0 1 0-16 0c0 6.5 8 12 8 12z" stroke="#D9C5A8" stroke-width="1.6"/><circle cx="12" cy="10" r="3" stroke="#D9C5A8" stroke-width="1.6"/></svg></div>
+          <div class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 22s8-5.5 8-12a8 8 0 1 0-16 0c0 6.5 8 12 8 12z" stroke="#E2C9A6" stroke-width="1.6"/><circle cx="12" cy="10" r="3" stroke="#E2C9A6" stroke-width="1.6"/></svg></div>
           <div><b>Dirección</b><span>C/ Berlín 34, Entresuelo 1ª · 08014 Barcelona<br>Visitas en horas convenidas</span></div>
         </div>
         <div>
-          <div class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#D9C5A8" stroke-width="1.6"/><path d="M12 6v6l4 2" stroke="#D9C5A8" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+          <div class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#E2C9A6" stroke-width="1.6"/><path d="M12 6v6l4 2" stroke="#E2C9A6" stroke-width="1.6" stroke-linecap="round"/></svg></div>
           <div><b>Horario de atención telefónica</b><span class="hours">Lunes a viernes · 9:00 – 21:00</span></div>
         </div>
       </div>
@@ -705,7 +706,7 @@
       <div>
         <div class="foot-brand">
           <img data-img="logo" alt="Símbolo de la Clínica Dental Dr. Espanya">
-          <span style="font-family:var(--serif);font-size:18px;color:var(--off)">Clínica Dental Dr. Espanya</span>
+          <span style="font-family:var(--head);font-size:18px;color:var(--off)">Clínica Dental Dr. Espanya</span>
         </div>
         <p>Odontología de calidad, cercana y transparente, desde 1984. Método slow: nos focalizamos en ti.</p>
       </div>
